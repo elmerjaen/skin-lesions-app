@@ -12,7 +12,7 @@ function App() {
   };
 
   return (
-    <div className="h-screen items-center justify-center overflow-hidden">
+    <div className="h-full items-center justify-center overflow-hidden">
       <Header />
       {!showGradioApp && <LandingPage handleGetStarted={handleGetStarted} />}
       {showGradioApp && <GradioApp />}

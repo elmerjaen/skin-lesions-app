@@ -5,7 +5,7 @@ const GradioApp = () => {
     <div className="h-full bg-[#0b0f19]">
       <iframe
         className="fade-in-uploader"
-        src="https://8faa9b20bfb43e9990.gradio.live/"
+        src="https://thawing-river-31320-f2b7f2e4ef95.herokuapp.com/"
         title="Gradio App"
         width="100%"
         height="510"
