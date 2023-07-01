@@ -13,7 +13,7 @@ function LandingPage({ handleGetStarted }) {
 
   return (
     <div
-      className={`flex flex-col h-full items-center justify-center bg-blue-300 ${
+      className={`flex flex-col h-full items-center justify-center bg-blue-200 ${
         fadeOut ? "fade-out" : null
       }`}
     >
@@ -23,6 +23,10 @@ function LandingPage({ handleGetStarted }) {
         }`}
       >
         <h1 className="text-8xl font-bold">DermAI Scan</h1>
+        <p className="text-2xl font-bold">
+          Your personal Skin Lesion detector.
+        </p>
+
         <p>Empowering Skin Health through Image-Based Detection.</p>
         <button
           className="m-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded shadow-md transition-transform duration-200 active:scale-90"
@@ -33,26 +37,59 @@ function LandingPage({ handleGetStarted }) {
       </div>
       <div className="bg-[#011627] p-10 text-white">
         <h1 className="pb-4 font-bold text-3xl ">Powerful Benefits</h1>
-        <div className="grid grid-cols-3 gap-4">
-          <div className="border p-4">
+        <div className="grid grid-cols-3 gap-10">
+          <div className="border rounded-lg p-4 transform-gpu transition-transform duration-300 hover:scale-110">
+            <img
+              className="pb-2"
+              src="https://firebasestorage.googleapis.com/v0/b/skin-lesios-react-app.appspot.com/o/project_files%2Ftarget.png?alt=media&token=98ab7acc-51ff-4a4e-93a2-8c4e44e9447a"
+              alt="high accuracy"
+            ></img>
             <h1 className="font-bold pb-2">Accurate Analysis</h1>
-            <p>
-              Achieving up to 85% of accuracy in identifying different skin
-              lesions.
+            <p className="text-justify">
+              Our model has been trained on a diverse set of skin lesion images
+              and can achieve up to 80% accuracy in identifying common skin
+              lesions, including nevus and pigmented benign keratosis, as well
+              as more rare but potentially fatal conditions such as melanoma and
+              basal cell carcinoma.
             </p>
           </div>
-          <div className="border p-4">
+          <div className="border rounded-lg p-4 transform-gpu transition-transform duration-300 hover:scale-110">
+            <img
+              className="pb-2"
+              src="https://firebasestorage.googleapis.com/v0/b/skin-lesios-react-app.appspot.com/o/project_files%2Fback-in-time.png?alt=media&token=9e6d9ba1-88c5-45bc-9b70-424b845c80bd"
+              alt="save time"
+            ></img>
             <h1 className="font-bold pb-2">Save Time</h1>
-            <p>Streamlines the diagnostic process.</p>
+            <p className="text-justify">
+              Our model significantly streamlines the diagnostic process for
+              patients and doctors. This tool enables faster and more accurate
+              diagnoses, improving patient outcomes and simplifying the overall
+              experience.
+            </p>
           </div>
-          <div className="border p-4">
+          <div className="border rounded-lg p-4 transform-gpu transition-transform duration-300 hover:scale-110">
+            <img
+              className="pb-2"
+              src="https://firebasestorage.googleapis.com/v0/b/skin-lesios-react-app.appspot.com/o/project_files%2Fartificial-intelligence.png?alt=media&token=6ca8905f-622e-4ebc-bdb4-e918219bae9c"
+              alt="ai"
+            ></img>
             <h1 className="font-bold pb-2">Innovative AI</h1>
-            <p>Leveraging the latest machine learning techniques.</p>
+            <p>Leveraging the latest image classification techniques.</p>
           </div>
         </div>
       </div>
       <div className="p-12">
-        <h1 className="pb-4 font-bold text-3xl ">Frequently Asked Questions</h1>
+        <div className="flex">
+          <img
+            className="p-4"
+            src="https://firebasestorage.googleapis.com/v0/b/skin-lesios-react-app.appspot.com/o/project_files%2Ffaq.png?alt=media&token=d78c8771-7b30-4412-9adc-b4c1668ab435"
+            alt="faq"
+          ></img>
+          <h1 className="pt-8 font-bold text-3xl ">
+            Frequently Asked Questions
+          </h1>
+        </div>
+
         <div className="grid grid-cols-2 gap-4">
           <div className="p-4">
             <h1 className="font-bold pb-2">How accurate is the classifier</h1>
